@@ -1,4 +1,4 @@
-/* BALISTYLE */
+/* WASSUP */
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 /* MIGUEL MORALES CODE */
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////NAVBAR /////////////////////////////////////////////*/
@@ -951,7 +951,6 @@ tbody tr{
 .banner-text{
     align-items: center;
     display: block;
-    position:relative
     top: 50%;
     left: 50%;
     transform: translate(-50%, -60%);
@@ -994,7 +993,6 @@ tbody tr{
 /* CONTACT */
 
 .aboutcontent-2{
-    align: right;
     display:block;
     overflow-x: auto;
 }
