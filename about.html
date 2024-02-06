@@ -23,7 +23,9 @@
 <section class="headernoimage">
     <nav>
         <a href="index.html"><img src="navlogowhite.png"></a>
-        <div class="nav-links">
+        <i class='bx bx-menu' onclick="showMenu()" ></i> 
+            <div class="nav-links" id="navLinks">
+                <i class='bx bx-x' onclick="hideMenu()"></i>
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="services.html">SERVICES</a> </li>
@@ -46,10 +48,10 @@
         </div>
     <h3> PROPOSED DESIGN</h3>
     <P>The proposed design by HANODESIGN which created a yellow green and brown aesthetic that <br> promotes the motto of relaxation, rejuvenation, and wellness. </P>
-    <img src="family.jpg">
+   <div class="family"><img src="family.jpg">
     <h3>THE <span> PEOPLE</span></h3>
-    <P> The staff (left side), and the owners (right) as they were on soft launch. <br>Assuring quality at the highest regard since day 1.</P>
-    <div class="lobby">
+    <P> The staff (left side), and the owners (right side) as they were on soft launch. <br>Assuring quality at the highest regard since day 1.</P>
+   </div>
 </section>
 
 <!----------------------------------------------------------------------------FOOTER---------------------------------------------------------------------------------------------------->
@@ -58,15 +60,27 @@
 <section class="footer">
 
     <div class="exit">
-    <br>
-    <br>
-        <p style="font-size: 16px;">This website is made for Balithai as a project for ITS121L <br> to hone necessary skills in programming</p>
-    </div>
-        <p style="font-size: 12px;"> Made with <i class='bx bx-heart'></i> by Morales | Boston | Guevarra | Arevalo</p>
+    
+        <br>
+        <br>
+        <p>This website is made for Balithai as a project for ITS121L <br> to hone necessary skills in programming</p>
+        <p><b>© BALITHAI SPA 2024 </b>. All Rights Reserved.</p>
+        <br>
+        <p> Made with <i class='bx bx-heart'></i> by Morales | Boston | Guevarra | Arevalo</p>
     </section>
+    
 
-
-
+<!-----JAVASCRIPT-->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
 
 </body>
+
 </html>
