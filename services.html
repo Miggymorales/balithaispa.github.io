@@ -20,10 +20,12 @@
 <body>
 
 <!----------------------------------------------------------------------------------------------NAVIGATION BAR-------------------------------------------------------------------------->
-<section style="min-height: 10vh"  class="headernoimage">
+<section  class="header-2">
     <nav>
         <a href="index.html"><img src="navlogowhite.png"></a>
-        <div class="nav-links">
+        <i class='bx bx-menu' onclick="showMenu()" ></i> 
+        <div class="nav-links" id="navLinks">
+            <i class='bx bx-x' onclick="hideMenu()"></i>
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="services.html">SERVICES</a> </li>
@@ -33,16 +35,17 @@
             </ul>
         </div>
         <div class="fb"><a target="_blank" href="https://web.facebook.com/profile.php?id=61554830369842"><img src="FB.png"></a></div>
+        
     </nav>
-    </section>
     
-<section class="header-services">
-    <img src="massage.jpg" alt="Header Background Image">
     <div class="header-services-content">
         <h1>BALITHAI <SPAN>MASSAGE SERVICES</SPAN></h1>
         <p>Indulge in our spa services that rejuvenate your mind, body, and soul. Experience the perfect blend of tranquility and wellness.</p>
     </div>
-</section>
+
+    </section>
+    
+
     
 <section class="four-columns">
     <div class="column">
@@ -214,15 +217,38 @@
     </div>
 </section>
     
+
+
+<!----------------------------------------------------------------------------FOOTER---------------------------------------------------------------------------------------------------->
+
+
 <section class="footer">
 
-<div class="exit">
-<br>
-<br>
-    <p style="font-size: 16px;">This website is made for Balithai as a project for ITS121L <br> to hone necessary skills in programming</p>
-</div>
-    <p style="font-size: 12px;"> Made with <i class='bx bx-heart'></i> by Morales | Boston | Guevarra | Arevalo</p>
-</section>
+    <div class="exit">
     
+        <br>
+        <br>
+        <p>This website is made for Balithai as a project for ITS121L <br> to hone necessary skills in programming</p>
+        <p><b>© BALITHAI SPA 2024 </b>. All Rights Reserved.</p>
+        <br>
+        <p> Made with <i class='bx bx-heart'></i> by Morales | Boston | Guevarra | Arevalo</p>
+    </section>
+
+<!-----------------------------------------------------------------------------------JAVASCRIPT-------------------------------------------------------------------------------->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+    
+
+
+
 </body>
 </html>
