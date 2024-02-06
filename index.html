@@ -16,16 +16,20 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" 
     integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
 </head>
 <body>
 <!----------------------------------------------------------------------------------------------NAVIGATION BAR-------------------------------------------------------------------------->
     <section class="header">
         <nav>
             <a href="index.html"><img src="navlogowhite.png"></a>
-            <div class="nav-links">
+
+            <i class='bx bx-menu' onclick="showMenu()" ></i> 
+            <div class="nav-links" id="navLinks">
+                <i class='bx bx-x' onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
-                    <li><a href="services.html">SERVICES<i class='bx bx-down-arrow-alt'></i></a>  
+                    <li><a href="services.html">SERVICES</a>  
                      <ul class="dropdown">
                             <li><a href="services.html">STANDARD</a></li>
                             <li><a target="_blank" href="https://web.facebook.com/permalink.php?story_fbid=pfbid05mAPMTQ3p5UBk1fvBizW8FSvphGrjyvxLmUs5rJAkUNRg8BaDqTHn9fYBCmLSyBPl&id=61554830369842"><SPAN>GO</SPAN>PROMO</a></li>
@@ -35,7 +39,10 @@
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="facilities.html">FACILITIES</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
+                    <div for="show" class="mobile"><li><a for="show"><span>BOOK NOW</span></a></li></div>
+                    <div class="mobile"><li><a target="_blank" href="https://web.facebook.com/profile.php?id=61554830369842"><i class='bx bxl-facebook-square' ></i></a></li></div>
                 </ul>
+                
             </div>
             <label for="show" class="show-btn">Book Now</label>
             <div class="fb"><a target="_blank" href="https://web.facebook.com/profile.php?id=61554830369842"><img src="FB.png"></a></div>
@@ -127,11 +134,13 @@
 <section class="footer">
 
 <div class="exit">
-<br>
-<br>
-    <p style="font-size: 16px;">This website is made for Balithai as a project for ITS121L <br> to hone necessary skills in programming</p>
-</div>
-    <p style="font-size: 12px;"> Made with <i class='bx bx-heart'></i> by Morales | Boston | Guevarra | Arevalo</p>
+
+    <br>
+    <br>
+    <p>This website is made for Balithai as a project for ITS121L <br> to hone necessary skills in programming</p>
+    <p><b>© BALITHAI SPA 2024 </b>. All Rights Reserved.</p>
+    <br>
+    <p> Made with <i class='bx bx-heart'></i> by Morales | Boston | Guevarra | Arevalo</p>
 </section>
 
  
@@ -163,6 +172,16 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         }
     }
 })
+</script>
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
 </script>
 
 </body>
